@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAY M- Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/index.css">
+    
+</head>
+
+<body>
+    <div class="header">
+        <a href="#home" class="logo" >AJAY M</a>
+        <i class="fa-solid fa-bars" id="icon" onclick="open()"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#contact">Contact</a>
+            <i class="fa-solid fa-xmark" onclick="fun()"></i>
+        </nav>
+    </div>
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="/Media/images/aj.jpg" alt="Portfolio image">
+        </div>
+        <div class="home-content">
+            <h3>Hello, Myself</h3>
+            <h2>AJAY M</h2>
+            <h3>I'm a <span class="mul-text">Python Full Stack Developer</span></h3>
+            <p>Looking forward to work in an organization with a challenging position to expand and utilize my learning,
+                skills and knowledge. Possess excellent communication skills and have an eye for detail. Flexible to work in any
+                environment as required. Expertise in creating dynamic web applications using core Python, HTML, CSS, and JavaScript. Skilled in designing efficient backend logic and responsive frontends, I focus on delivering clean, scalable solutions. I enjoy solving challenges and turning ideas into functional, user-friendly applications.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ajay-m-14828a256/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/share/antgKexmXKTSCXy3/?mibextid=wwXIfr"><i class="fa-brands fa-facebook" target="_blank"></i></a>
+                <a href="https://instagram.com/_.ajxyz._/profilecard/?igsh=M21zZ3h2dmJ2dXd5"><i class="fa-brands fa-square-instagram" target="_blank"></i></a>
+            </div>
+                <a href="/Media/Ajayresume.pdf"><button class="btn" target ="_blank"> Download-cv</button></a>
+        </div>
+    </section>
+    <!--About me-->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>I'm a <span>Frontend Developer</span></h3>
+            <p>A Electronics and Communication Engineering student from SRM Institute of Science and Technology with a overall cgpa of 8.5 and apart from Electronics and Communication Engineering after my college I have completed a Python Full Stack Development course and I have learned Python, SQL, HTML, CSS, JavaScript for exploring it I have done a project named Spotstar which is basically a combination of Spotify and Hotstar by using HTML, CSS, Javascript. </p>
+        <!-- <a href="#" ><button class="btn">Read More</button></a>-->
+        </div>
+        <div class="about-img">
+            <img src="/Media/images/ajay.jpg" alt="images of me">
+        </div>
+    </section>
+    <!--Service Section Code-->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <ul>
+                    <li>Function</li>
+                    <li>OOP's</li>
+                    <li>Map</li>
+                    <li>Control Flow Statements</li>
+                </ul>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-database"></i> 
+                <h3>SQL</h3>
+                <ul>
+                    <li>Joins</li>
+                    <li>Sub-Query</li>
+                    <li>Functions</li>
+                    <li>RDBMS</li>
+                </ul>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Technology</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>DOM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--contact section-->
+    <section class="contact" id="contact" >
+        <h2 class="heading">Contact <Span>Me</Span></h2>
+
+        <form action="#" onsubmit="sendmail(); reset(); return false;" name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="email">
+            </div>
+            <div class="input-box">
+                <input type="number" name="Phone number" placeholder="phone number">
+                <input type="text" name="subject" placeholder="email Subject">
+            </div>
+            <!--<textarea name="message" class="input-box" cols="30" rows="10" name="content" placeholder="content"></textarea>-->
+            <input type="submit" value="send message" class="btn">
+        </form>
+        <span id="msg"></span>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/ajay-m-14828a256/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/share/antgKexmXKTSCXy3/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/_.ajxyz._/profilecard/?igsh=M21zZ3h2dmJ2dXd5" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p class="copyright">
+            &copy;ajay_m- All Rights Reserved 
+        </p>
+    </footer>
+    <script src="/Js/js.js"></script>
+    <script>
+    let a=document.querySelector('.navbar')
+        function open(){
+            a.style.background="red";
+        }
+</script>
+</body>
+
+</html>
